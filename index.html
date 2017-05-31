@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Process Street</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script charset="ISO-8859-1" src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="public/app.js"></script>
+    </head>
+    <body ng-app="TestApp">
+        <div class="container-fluid" ng-controller="TestController">
+             <div class="col-lg-4 col-lg-offset-4">
+            <div class="alert alert-info" ng-if="loader">
+                <strong>Info!</strong> Video is uploading.
+            </div>
+            <div class="alert alert-danger" ng-if="error">
+                <strong>Error!</strong> {{errorMessage}}
+            </div>
+             </div>
+            <div class="col-lg-4 col-lg-offset-4">
+            <h3>Upload a Video</h3>
+            </div>
+            <div class="col-lg-4 col-lg-offset-5">
+            <input type="file" onchange="angular.element(this).scope().filesChanged(this)"  />
+            </div>
+             <div class="col-lg-4 col-lg-offset-4">
+                 <div ng-if="hashedId != ''" style="padding:30px;">
+                    <div class="wistia_embed wistia_async_{{hashedId}}" style="height:360px;width:640px">&nbsp;</div>            
+                   
+                 </div>
+            </div>   
+        </div>   
+    </body>
+</html>
