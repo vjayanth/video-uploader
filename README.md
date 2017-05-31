@@ -3,11 +3,11 @@ wistia video uploader using AngularJS.
 
 To run the application :
 
-step 1: Clone the repo .
-step 2 : Get inside the directory using terminal or cd video-uploader
+
 
 ```bash
-
+step 1: git clone  .
+step 2 : cd video-uploader
 step 3 : npm install
 step 4 : npm start 
 ```
