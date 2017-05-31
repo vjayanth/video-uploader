@@ -6,7 +6,7 @@ To run the application :
 
 
 ```bash
-step 1: git clone  .
+step 1: git clone  https://github.com/vjayanth/video-uploader.git 
 step 2 : cd video-uploader
 step 3 : npm install
 step 4 : npm start 
