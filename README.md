@@ -1,6 +1,8 @@
 # video-uploader
 wistia video uploader using AngularJS.
 
+Demo Url : https://video-wistia.herokuapp.com/
+
 To run the application :
 
 
